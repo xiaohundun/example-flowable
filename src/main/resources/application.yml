@@ -1,0 +1,19 @@
+server:
+  port: 8899
+  servlet:
+    context-path: /flowable
+spring:
+  application:
+    name: flowable
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: yoururl
+    username: yourusername
+    password: yourpassword
+flowable:
+  db-history-used: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: flowable
